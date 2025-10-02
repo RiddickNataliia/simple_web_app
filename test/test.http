@@ -41,3 +41,7 @@ Content-Type: application/json
   "b": 2,
   "operation": "multiply"
 }
+
+###
+
+GET http://localhost:7071/api/transactions

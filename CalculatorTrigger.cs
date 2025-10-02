@@ -43,6 +43,13 @@ public class CalculatorTrigger
         {
             return new BadRequestObjectResult("Invalid operation. Supported operations are: add, subtract, multiply, divide.");
         }
-        return new OkObjectResult("The result of " + operation + "ing " + a + " and " + b + " is: " + result);
+
+        CalcuationResult calcuationResult = new CalcuationResult
+        {
+            Operation = operation,
+            Result = result
+        };
+        return new OkObjectResult(calcuationResult);
     }
+
 }

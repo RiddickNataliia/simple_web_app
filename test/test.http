@@ -26,3 +26,7 @@ GET http://localhost:7071/api/calculator/3/5/multiply
 ###
 
 GET http://localhost:7071/api/calculator/3/5/divide
+
+###
+
+GET https://cloud-function-gfcragd9c3fvgqcn.polandcentral-01.azurewebsites.net/api/calculator/{a:int}/{b:int}/{operation}

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 
-namespace Howest.Function;
+namespace Howest.Functions;
 
 public class CalculatorProTrigger
 {
@@ -50,12 +50,4 @@ public class CalculatorProTrigger
         
         return new OkObjectResult(request);
     }
-}
-
-public class CalculatorRequest
-{
-    public int A { get; set; }
-    public int B { get; set; }
-    public string Operation { get; set; } = string.Empty;
-    public int Result { get; set; }
 }
